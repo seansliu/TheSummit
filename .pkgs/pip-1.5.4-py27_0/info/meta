@@ -1,7 +1,0 @@
-pkg: pip-1.5.4
-dist: pip-1.5.4-py27_0
-home: http://www.pip-installer.org/
-license: MIT
-has_bin: True
-has_lib: False
-has_py: True
