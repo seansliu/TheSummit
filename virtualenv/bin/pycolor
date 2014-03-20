@@ -1,0 +1,6 @@
+#!/Users/Niels/git/summit/virtualenv/python.app/Contents/MacOS/python
+if __name__ == '__main__':
+    import sys
+    from IPython.utils.PyColorize import main
+
+    sys.exit(main())
