@@ -1,6 +1,0 @@
-#!/Users/Niels/git/summit/virtualenv/python.app/Contents/MacOS/python
-if __name__ == '__main__':
-    import sys
-    from IPython import start_ipython
-
-    sys.exit(start_ipython())
