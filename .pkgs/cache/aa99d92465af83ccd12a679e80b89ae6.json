@@ -1,6 +1,6 @@
 {
-  "_etag": "\"5dfc676257473c7de3c25a88422a63f1\"", 
-  "_mod": "Wed, 19 Mar 2014 23:21:02 GMT", 
+  "_etag": "\"f409bafac57ff70d3a2d6ea19146760a\"", 
+  "_mod": "Thu, 20 Mar 2014 22:04:46 GMT", 
   "_url": "http://repo.continuum.io/pkgs/free/osx-64/", 
   "info": {
     "arch": "x86_64", 
@@ -14263,6 +14263,57 @@
       "size": 21190, 
       "version": "2.1.6"
     }, 
+    "gdal-1.10.1-np18py26_2.tar.bz2": {
+      "build": "np18py26_2", 
+      "build_number": 2, 
+      "depends": [
+        "numpy 1.8*", 
+        "python 2.6*"
+      ], 
+      "license": "MIT", 
+      "md5": "277fde44888cb4ef3fd445864c97687b", 
+      "name": "gdal", 
+      "requires": [
+        "numpy 1.8", 
+        "python 2.6"
+      ], 
+      "size": 11189819, 
+      "version": "1.10.1"
+    }, 
+    "gdal-1.10.1-np18py27_2.tar.bz2": {
+      "build": "np18py27_2", 
+      "build_number": 2, 
+      "depends": [
+        "numpy 1.8*", 
+        "python 2.7*"
+      ], 
+      "license": "MIT", 
+      "md5": "e987c8c375d68c8b97ad2baa4f8aca94", 
+      "name": "gdal", 
+      "requires": [
+        "numpy 1.8", 
+        "python 2.7"
+      ], 
+      "size": 11187959, 
+      "version": "1.10.1"
+    }, 
+    "gdal-1.10.1-np18py33_2.tar.bz2": {
+      "build": "np18py33_2", 
+      "build_number": 2, 
+      "depends": [
+        "numpy 1.8*", 
+        "python 3.3*"
+      ], 
+      "license": "MIT", 
+      "md5": "4f2515c0ff5ca0cfaa3a8f03206ef734", 
+      "name": "gdal", 
+      "requires": [
+        "numpy 1.8", 
+        "python 3.3"
+      ], 
+      "size": 11192470, 
+      "version": "1.10.1"
+    }, 
     "gdal-1.10.1-py26_1.tar.bz2": {
       "build": "py26_1", 
       "build_number": 1, 
@@ -18385,6 +18436,57 @@
       ], 
       "size": 525067, 
       "version": "0.12.3"
+    }, 
+    "llvmpy-0.12.4-py26_0.tar.bz2": {
+      "build": "py26_0", 
+      "build_number": 0, 
+      "depends": [
+        "llvm 3.3", 
+        "python 2.6*"
+      ], 
+      "license": "New BSD License", 
+      "md5": "d6145254bc4daabf4ebbdfd800dc5340", 
+      "name": "llvmpy", 
+      "requires": [
+        "llvm 3.3", 
+        "python 2.6"
+      ], 
+      "size": 545655, 
+      "version": "0.12.4"
+    }, 
+    "llvmpy-0.12.4-py27_0.tar.bz2": {
+      "build": "py27_0", 
+      "build_number": 0, 
+      "depends": [
+        "llvm 3.3", 
+        "python 2.7*"
+      ], 
+      "license": "New BSD License", 
+      "md5": "786816f30ef8c48026cc3f3d78dcc5cd", 
+      "name": "llvmpy", 
+      "requires": [
+        "llvm 3.3", 
+        "python 2.7"
+      ], 
+      "size": 510015, 
+      "version": "0.12.4"
+    }, 
+    "llvmpy-0.12.4-py33_0.tar.bz2": {
+      "build": "py33_0", 
+      "build_number": 0, 
+      "depends": [
+        "llvm 3.3", 
+        "python 3.3*"
+      ], 
+      "license": "New BSD License", 
+      "md5": "eac43d68d708d084dad0ae3a7ad30765", 
+      "name": "llvmpy", 
+      "requires": [
+        "llvm 3.3", 
+        "python 3.3"
+      ], 
+      "size": 526594, 
+      "version": "0.12.4"
     }, 
     "llvmpy-0.8.3-py26_0.tar.bz2": {
       "build": "py26_0", 
@@ -26828,6 +26930,75 @@
       ], 
       "size": 418613, 
       "version": "2.1.0"
+    }, 
+    "pillow-2.3.1-py26_0.tar.bz2": {
+      "build": "py26_0", 
+      "build_number": 0, 
+      "depends": [
+        "freetype 2.4.10", 
+        "jpeg 8d", 
+        "libtiff 4.0.2", 
+        "python 2.6*", 
+        "zlib 1.2.7"
+      ], 
+      "license": "Standard PIL license", 
+      "md5": "67b957a059b3cd5e34611afb1ab4dd46", 
+      "name": "pillow", 
+      "requires": [
+        "freetype 2.4.10", 
+        "jpeg 8d", 
+        "libtiff 4.0.2", 
+        "python 2.6", 
+        "zlib 1.2.7"
+      ], 
+      "size": 419092, 
+      "version": "2.3.1"
+    }, 
+    "pillow-2.3.1-py27_0.tar.bz2": {
+      "build": "py27_0", 
+      "build_number": 0, 
+      "depends": [
+        "freetype 2.4.10", 
+        "jpeg 8d", 
+        "libtiff 4.0.2", 
+        "python 2.7*", 
+        "zlib 1.2.7"
+      ], 
+      "license": "Standard PIL license", 
+      "md5": "429286c44fb053f92b65edbace9b49d3", 
+      "name": "pillow", 
+      "requires": [
+        "freetype 2.4.10", 
+        "jpeg 8d", 
+        "libtiff 4.0.2", 
+        "python 2.7", 
+        "zlib 1.2.7"
+      ], 
+      "size": 420010, 
+      "version": "2.3.1"
+    }, 
+    "pillow-2.3.1-py33_0.tar.bz2": {
+      "build": "py33_0", 
+      "build_number": 0, 
+      "depends": [
+        "freetype 2.4.10", 
+        "jpeg 8d", 
+        "libtiff 4.0.2", 
+        "python 3.3*", 
+        "zlib 1.2.7"
+      ], 
+      "license": "Standard PIL license", 
+      "md5": "6a32e9e34b4d53f46533b22373ee9ce1", 
+      "name": "pillow", 
+      "requires": [
+        "freetype 2.4.10", 
+        "jpeg 8d", 
+        "libtiff 4.0.2", 
+        "python 3.3", 
+        "zlib 1.2.7"
+      ], 
+      "size": 460544, 
+      "version": "2.3.1"
     }, 
     "pip-1.1-py26_1.tar.bz2": {
       "build": "py26_1", 
@@ -38105,6 +38276,33 @@
       ], 
       "size": 2439328, 
       "version": "2.6.1"
+    }, 
+    "yt-2.6.2-np18py27_0.tar.bz2": {
+      "build": "np18py27_0", 
+      "build_number": 0, 
+      "depends": [
+        "freetype 2.4.10", 
+        "h5py 2.2.1", 
+        "hdf5 1.8.9", 
+        "libpng 1.5.13", 
+        "matplotlib 1.3.1", 
+        "numpy 1.8*", 
+        "python 2.7*"
+      ], 
+      "license": "BSD", 
+      "md5": "65db84312bf0b43e818496a26d94f204", 
+      "name": "yt", 
+      "requires": [
+        "freetype 2.4.10", 
+        "h5py 2.2.1", 
+        "hdf5 1.8.9", 
+        "libpng 1.5.13", 
+        "matplotlib 1.3.1", 
+        "numpy 1.8", 
+        "python 2.7"
+      ], 
+      "size": 2489654, 
+      "version": "2.6.2"
     }, 
     "zeromq-2.2.0-0.tar.bz2": {
       "build": "0", 
