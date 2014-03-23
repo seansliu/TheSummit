@@ -1,14 +1,19 @@
 from django.db import models
-from djangotoolbox.fields import ListField
+from django.contrib.auth.models import User
+#from djangotoolbox.fields import ListField
 
 
-# Example models
-class Post(models.Model):
-    title = models.CharField()
-    text = models.TextField()
-    tags = ListField()
-    comments = ListField()
+#---------------
+# Summit Models |
+#---------------
 
-class Article(models.Model):
-    title = models.CharField(max_length=64)
-    content = models.TextField()
+
+class Question(models.Model):
+    question_text = models.TextField()
+    pub_date = models.DateTimeField('date published')
+    #each question relates to one user in the auth_user collection
+    user_id = models.ForeignKey(User)
+    occupation = models.CharField(max_length=64)
+
+    def __unicode__(self):
+        return self.question_text
