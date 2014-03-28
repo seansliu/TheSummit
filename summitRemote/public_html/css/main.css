@@ -3,3 +3,89 @@
     Created on : Mar 22, 2014, 5:27:56 PM
     Author     : mars
 */
+
+*{
+    transition: border .25s linear, 
+        box-shadow 0.5s linear,
+        color .25s linear, 
+        background-color .25s linear;
+}
+
+.pointTo{
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); /* IE 9 */
+    -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+}
+
+.triangle{
+
+    width: 0; 
+    height: 0; 
+    border-right: 0;
+
+
+    border-top: 2em solid transparent;
+
+
+    border-bottom: 2em solid transparent;
+
+    /* border-left: 5em solid #BDC3C7; */
+
+}
+
+.triangle1{
+
+    width: 0; 
+    height: 0; 
+
+    border-bottom: 0;
+
+
+    border-right: 10px solid transparent;
+
+
+    border-left: 10px solid transparent;
+
+    border-top: 20px solid #BDC3C7;
+
+}
+
+.hlines{
+    
+    position: relative;
+    font-size: 1.2em;
+    
+    width: 100%;
+    -moz-box-shadow: 0 0 20px 0  #2c3e50;
+    -webkit-box-shadow: 0 0 20px 0  #2c3e50;
+    box-shadow: 0 0 20px 0  #2c3e50;
+
+    border: none;
+     overflow-y: visible;
+}
+
+.hlines:hover{
+    cursor: pointer;
+    -moz-box-shadow: 0 0 20px 0  #2c3e50;
+    -webkit-box-shadow: 0 0 20px 0  #2c3e50;
+    box-shadow: 0 15px 15px 0  #2c3e50;
+    
+    
+} 
+
+.hlines a {
+    text-decoration: none;
+}
+
+.hlines .panel-heading {
+    color: black;
+   
+    background-color: rgba(151, 164, 165, 0.55);
+    border-color: rgba(151, 164, 165, 0.94);
+    padding: 1em;
+}
+
+.hlines .panel-title {
+     font-size: 1.5em;
+     font-weight: 300;
+}
