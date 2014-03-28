@@ -23,7 +23,6 @@ class UserProfile(models.Model):
 class Question(models.Model):
     question_text = models.TextField()
     pub_date = models.DateTimeField('date published')
-    #each question relates to one user in the auth_user collection
     author = models.ForeignKey(User, default=0)
     rating = models.IntegerField(default=0)
 
