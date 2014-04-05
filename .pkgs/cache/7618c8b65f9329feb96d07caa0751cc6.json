@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "_etag": "\"56e3f98c60f5c370b579ca398a5eb55b\"", 
   "_mod": "Thu, 27 Mar 2014 21:31:52 GMT", 
+=======
+  "_etag": "\"c6b2acbb466d5bc029d92172624853f7\"", 
+  "_mod": "Tue, 04 Mar 2014 21:24:00 GMT", 
+>>>>>>> 54bc78dea214c57cee5be74016c573a558d8ad0a
   "_url": "http://repo.continuum.io/pkgs/pro/osx-64/", 
   "info": {
     "arch": "x86_64", 
@@ -1325,6 +1330,7 @@
       "track_features": "mkl", 
       "version": "1.4.1"
     }, 
+<<<<<<< HEAD
     "accelerate-1.5.0-np18py26_p0.tar.bz2": {
       "build": "np18py26_p0", 
       "build_channel": "p", 
@@ -1373,6 +1379,8 @@
       "track_features": "mkl", 
       "version": "1.5.0"
     }, 
+=======
+>>>>>>> 54bc78dea214c57cee5be74016c573a558d8ad0a
     "cudatoolkit-5.5.1-p0.tar.bz2": {
       "build": "p0", 
       "build_channel": "p", 
@@ -3059,6 +3067,7 @@
       "size": 578124, 
       "version": "1.6.2"
     }, 
+<<<<<<< HEAD
     "iopro-1.6.3-np18py26_p0.tar.bz2": {
       "build": "np18py26_p0", 
       "build_channel": "p", 
@@ -3097,6 +3106,8 @@
       "size": 606697, 
       "version": "1.6.3"
     }, 
+=======
+>>>>>>> 54bc78dea214c57cee5be74016c573a558d8ad0a
     "libnvvm-1.0-p0.tar.bz2": {
       "build": "p0", 
       "build_channel": "p", 
@@ -4956,6 +4967,7 @@
       "size": 242806, 
       "version": "0.13.2"
     }, 
+<<<<<<< HEAD
     "numbapro-0.14.0-np18py26_p0.tar.bz2": {
       "build": "np18py26_p0", 
       "build_channel": "p", 
@@ -5006,6 +5018,8 @@
       "size": 236298, 
       "version": "0.14.0"
     }, 
+=======
+>>>>>>> 54bc78dea214c57cee5be74016c573a558d8ad0a
     "numbapro-0.5-np15py26_0.tar.bz2": {
       "build": "np15py26_0", 
       "build_number": 0, 
@@ -6444,6 +6458,7 @@
       "size": 3035434, 
       "version": "1.8.0"
     }, 
+<<<<<<< HEAD
     "numpy-1.8.1-py26_p0.tar.bz2": {
       "build": "py26_p0", 
       "build_channel": "p", 
@@ -6484,6 +6499,8 @@
       "size": 3052931, 
       "version": "1.8.1"
     }, 
+=======
+>>>>>>> 54bc78dea214c57cee5be74016c573a558d8ad0a
     "scikit-learn-0.13.1-np15py26_p0.tar.bz2": {
       "build": "np15py26_p0", 
       "build_channel": "p", 
