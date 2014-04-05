@@ -1,12 +1,12 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-from summit_app.models import Question
+from summit_app.models import Content
 
 
 def index(request):
-    latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    context = {'latest_question_list': latest_question_list}
+    latest_content_list = Content.objects.order_by('-pub_date')[:5]
+    context = {'latest_question_list': latest_content_list}
     return render(request, 'summit_app/index.html', context)
 
 

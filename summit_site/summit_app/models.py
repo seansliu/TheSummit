@@ -27,13 +27,13 @@ class Content(models.Model):
     author = models.ForeignKey(User)
 
     #Comment types
-    COMMENT_TYPES = (
+    CONTENT_TYPES = (
         ('Q', 'Question'),
         ('C', 'Comment'),
         ('L', 'Link'),
     )
 
-    comment_type = models.CharField(max_length=1, choices=COMMENT_TYPES)
+    comment_type = models.CharField(max_length=1, choices=CONTENT_TYPES)
     is_toplevel_question = models.BooleanField()
 
     parent_question = models.ForeignKey('self', blank=True,
@@ -45,6 +45,7 @@ class Content(models.Model):
     endorse_rating = models.IntegerField(default=0)
     content_rating = models.IntegerField(default=0)
     insight_rating = models.IntegerField(default=0)
+    star_rating = models.IntegerField(default=0)
 
     def was_published_recently(self):
         return self.pub_date >= timezone.now()\
@@ -83,7 +84,7 @@ class BoK(models.Model):
 # Older Models |
 #--------------
 
-
+'''
 class Question(models.Model):
     question_text = models.TextField()
     pub_date = models.DateTimeField('date published')
@@ -118,3 +119,4 @@ class Comment(models.Model):
 
     def __unicode__(self):
         return self.comment_text
+'''
