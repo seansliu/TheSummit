@@ -26,7 +26,7 @@ class ContentAdmin(admin.ModelAdmin):
         ('Content', {'fields': ['text']}),
         ('Date Information', {
             'fields': ['pub_date'],
-            'classes': ['collapse']
+            #'classes': ['collapse']
             }),
         ('Content Type?', {'fields': ['content_type']}),
         ('Is Top Level', {'fields': ['is_toplevel_question']}),
@@ -48,7 +48,8 @@ class BoKAdmin(admin.ModelAdmin):
         ('Type', {'fields': ['bok_type']}),
         ('Date Information', {
             'fields': ['pub_date'],
-            'classes': ['collapse']}),
+            #'classes': ['collapse']
+            }),
     ]
 
     inlines = [ArgumentInline] + [AttachmentInline]
