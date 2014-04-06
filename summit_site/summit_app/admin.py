@@ -1,5 +1,6 @@
 from django.contrib import admin
-from summit_app.models import Content, BoK, Argument
+from summit_app.models import Content, BoK, Argument, Attachment
+from attachments.admin import AttachmentInlines
 
 
 class ContentInline(admin.TabularInline):
@@ -10,6 +11,12 @@ class ContentInline(admin.TabularInline):
 
 class ArgumentInline(admin.TabularInline):
     model = Argument
+    extra = 1
+
+
+#ATTACHMENTS NOT FULLY WORKING YET
+class AttachmentInline(admin.TabularInline):
+    model = Attachment
     extra = 1
 
 
@@ -44,7 +51,7 @@ class BoKAdmin(admin.ModelAdmin):
             'classes': ['collapse']}),
     ]
 
-    inlines = [ArgumentInline]
+    inlines = [ArgumentInline] + [AttachmentInline]
 
 
 admin.site.register(Content, ContentAdmin)

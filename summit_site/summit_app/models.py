@@ -88,6 +88,11 @@ class BoK(models.Model):
         return self.headline
 
 
+class Attachment(models.Model):
+    attachment = models.FileField(upload_to='attachments')
+    bok = models.ForeignKey(BoK)
+
+
 class Argument(models.Model):
     text = models.TextField()
     citation = models.TextField()
