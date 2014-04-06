@@ -33,7 +33,7 @@ class Content(models.Model):
         ('L', 'Link'),
     )
 
-    comment_type = models.CharField(max_length=1, choices=COMMENT_TYPES)
+    content_type = models.CharField(max_length=1, choices=COMMENT_TYPES)
     is_toplevel_question = models.BooleanField()
 
     parent_question = models.ForeignKey('self', blank=True,
