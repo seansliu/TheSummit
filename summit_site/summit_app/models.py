@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from djangotoolbox.fields import DictField
 from django.utils import timezone
 from django.contrib import admin
-from django.core.files import File
+#from django.core.files import File
 #from attachments.admin import Attachment
 #from djangotoolbox.fields import ListField
 

@@ -1,6 +1,6 @@
 from django.contrib import admin
 from summit_app.models import Content, BoK, Argument, Attachment
-from attachments.admin import AttachmentInlines
+#from attachments.admin import AttachmentInlines
 
 
 class ContentInline(admin.TabularInline):
