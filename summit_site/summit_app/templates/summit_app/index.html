@@ -1,13 +1,13 @@
-{% if latest_question_list %}
+{% if latest_content_list %}
     <ul>
-    {% for question in latest_question_list %}
+    {% for content in latest_content_list %}
         <li>
-            <a href="/summit_app/{{ question.id }}/">
-                {{ question.question_text}}
+            <a href="/summit_app/{{ content.id }}/">
+                {{ content.text}}
             </a>
         </li>
     {% endfor %}
     </ul>
 {% else %}
-    <p>No questions are available.</p>
+    <p>No content is available.</p>
 {% endif %}

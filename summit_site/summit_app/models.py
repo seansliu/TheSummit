@@ -33,13 +33,15 @@ class Content(models.Model):
         ('L', 'Link'),
     )
 
-    comment_type = models.CharField(max_length=1, choices=CONTENT_TYPES)
+    content_type = models.CharField(max_length=1, choices=CONTENT_TYPES)
     is_toplevel_question = models.BooleanField()
 
-    parent_question = models.ForeignKey('self', blank=True,
-        null=True, related_name='question_parent_child')
-    parent_comment = models.ForeignKey('self', blank=True,
+    top_level_question = models.ForeignKey('self', blank=True,
+        null=True, related_name='children_of_top_level')
+    parent_content = models.ForeignKey('self', blank=True,
         null=True, related_name='comment_parent_child')
+    children = models.ForeignKey('self', blank=True,
+        null=True, related_name='parent')
 
     #Rating attributes
     endorse_rating = models.IntegerField(default=0)

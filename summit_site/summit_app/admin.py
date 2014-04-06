@@ -4,8 +4,8 @@ from summit_app.models import Content
 
 class ContentInline(admin.TabularInline):
     model = Content
-    fk_name = 'parent_question'
-    extra = 2
+    fk_name = 'children'
+    extra = 1
 
 
 class ContentAdmin(admin.ModelAdmin):
@@ -16,6 +16,10 @@ class ContentAdmin(admin.ModelAdmin):
             'fields': ['pub_date'],
             'classes': ['collapse']
             }),
+        ('Content Type?', {'fields': ['content_type']}),
+        ('Is Top Level', {'fields': ['is_toplevel_question']}),
+        ('Top Level Question', {'fields': ['top_level_question']}),
+        ('Parent Content', {'fields': ['parent_content']}),
     ]
 
     inlines = [ContentInline]

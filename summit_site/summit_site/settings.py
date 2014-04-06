@@ -13,12 +13,12 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django_mongodb_engine', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'summit_database',                      # Or path to database file if using sqlite3.
+        'NAME': 'hackathonfakedata',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': 27017,                      # Set to empty string for default.
+        'USER': 'niels',
+        'PASSWORD': 'd8ebbb58d704d82fbf9787d6284a213f',
+        'HOST': 'mongodb://ds049337.mongolab.com/49337',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': 49337,                      # Set to empty string for default.
     }
 }
 
