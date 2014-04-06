@@ -33,7 +33,15 @@ class Content(models.Model):
         ('L', 'Link'),
     )
 
+<<<<<<< HEAD
     content_type = models.CharField(max_length=1, choices=CONTENT_TYPES)
+=======
+<<<<<<< HEAD
+    content_type = models.CharField(max_length=1, choices=COMMENT_TYPES)
+=======
+    comment_type = models.CharField(max_length=1, choices=CONTENT_TYPES)
+>>>>>>> 21393d7e39249ad22588b92d41c959c37fcd0b44
+>>>>>>> 7f6096e3e17d64b3d2207a297696e2aaed9acedd
     is_toplevel_question = models.BooleanField()
 
     top_level_question = models.ForeignKey('self', blank=True,
