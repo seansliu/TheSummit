@@ -62,10 +62,12 @@ class Content(models.Model):
 
 
 class BoK(models.Model):
+    author = models.ForeignKey(User)
     headline = models.TextField()
     pub_date = models.DateTimeField('date published')
-    arguments = DictField(models.TextField())
-    citations = DictField(models.TextField())
+    arguments = models.TextField()
+    support = models.TextField()
+    citations = models.TextField()
 
     BOK_TYPES = (
         ('D', 'Declaration'),
@@ -75,12 +77,18 @@ class BoK(models.Model):
     )
 
     bok_type = models.CharField(max_length=1, choices=BOK_TYPES)
-    parent_question = models.ForeignKey(Content)
+    parent_question = models.ForeignKey('self', blank=True,
+        null=True, related_name='comment_parent_child')
 
     #Rating attributes
     endorse_rating = models.IntegerField(default=0)
     content_rating = models.IntegerField(default=0)
     insight_rating = models.IntegerField(default=0)
+
+    def __unicode__(self):
+        return self.headline
+
+
 
 #--------------
 # Older Models |

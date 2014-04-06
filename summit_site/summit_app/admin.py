@@ -1,5 +1,5 @@
 from django.contrib import admin
-from summit_app.models import Content
+from summit_app.models import Content, BoK
 
 
 class ContentInline(admin.TabularInline):
@@ -27,4 +27,19 @@ class ContentAdmin(admin.ModelAdmin):
     list_filter = ['pub_date']
     search_fields = ['text']
 
+
+class BoKAdmin(admin.ModelAdmin):
+    fieldsets = [
+        ('Username', {'fields': ['author']}),
+        ('Headline', {'fields': ['headline']}),
+        ('Type', {'fields': ['bok_type']}),
+        ('Arguments', {'fields': ['arguments']}),
+        ('Support', {'fields': ['support']}),
+        ('Citations', {'fields': ['citations']}),
+        ('Date Information', {
+            'fields': ['pub_date'],
+            'classes': ['collapse']}),
+    ]
+
 admin.site.register(Content, ContentAdmin)
+admin.site.register(BoK, BoKAdmin)
