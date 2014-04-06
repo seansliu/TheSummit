@@ -1,25 +1,26 @@
 from django.contrib import admin
-from summit_app.models import Question, Comment
+from summit_app.models import Content
 
 
-class CommentInline(admin.TabularInline):
-    model = Comment
+class ContentInline(admin.TabularInline):
+    model = Content
+    fk_name = 'parent_question'
     extra = 2
 
 
-class QuestionAdmin(admin.ModelAdmin):
+class ContentAdmin(admin.ModelAdmin):
     fieldsets = [
         ('Username', {'fields': ['author']}),
-        ('Question', {'fields': ['question_text']}),
+        ('Content', {'fields': ['text']}),
         ('Date Information', {
             'fields': ['pub_date'],
             'classes': ['collapse']
             }),
-        ('Occupation', {'fields': ['occupation']})
     ]
-    inlines = [CommentInline]
-    list_display = ('question_text', 'author', 'pub_date')
-    list_filter = ['pub_date']
-    search_fields = ['question_text']
 
-admin.site.register(Question, QuestionAdmin)
+    inlines = [ContentInline]
+    list_display = ('text', 'author', 'pub_date')
+    list_filter = ['pub_date']
+    search_fields = ['text']
+
+admin.site.register(Content, ContentAdmin)
