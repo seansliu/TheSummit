@@ -36,7 +36,7 @@ TIME_ZONE = 'America/Chicago'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
 
-SITE_ID = '53409c6bf8cfc905992124b1'
+SITE_ID = '5340d425ebcf9292a8e47298'
 #SITE_ID = '532e04ee6d081c05ad62f836'
 
 #path name for the project root

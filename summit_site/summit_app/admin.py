@@ -32,6 +32,7 @@ class BoKAdmin(admin.ModelAdmin):
     fieldsets = [
         ('Username', {'fields': ['author']}),
         ('Headline', {'fields': ['headline']}),
+        ('Parent Content', {'fields': ['parent_content']}),
         ('Type', {'fields': ['bok_type']}),
         ('Arguments', {'fields': ['arguments']}),
         ('Support', {'fields': ['support']}),

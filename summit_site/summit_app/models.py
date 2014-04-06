@@ -77,7 +77,7 @@ class BoK(models.Model):
     )
 
     bok_type = models.CharField(max_length=1, choices=BOK_TYPES)
-    parent_question = models.ForeignKey('self', blank=True,
+    parent_content = models.ForeignKey('self', blank=True,
         null=True, related_name='comment_parent_child')
 
     #Rating attributes
