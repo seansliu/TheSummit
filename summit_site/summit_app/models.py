@@ -3,6 +3,9 @@ from django.db import models
 from django.contrib.auth.models import User
 from djangotoolbox.fields import DictField
 from django.utils import timezone
+from django.contrib import admin
+from django.core.files import File
+#from attachments.admin import Attachment
 #from djangotoolbox.fields import ListField
 
 
@@ -65,9 +68,6 @@ class BoK(models.Model):
     author = models.ForeignKey(User)
     headline = models.TextField()
     pub_date = models.DateTimeField('date published')
-    arguments = models.TextField()
-    support = models.TextField()
-    citations = models.TextField()
 
     BOK_TYPES = (
         ('D', 'Declaration'),
@@ -88,6 +88,10 @@ class BoK(models.Model):
         return self.headline
 
 
+class Argument(models.Model):
+    text = models.TextField()
+    citation = models.TextField()
+    bok = models.ForeignKey(BoK)
 
 #--------------
 # Older Models |

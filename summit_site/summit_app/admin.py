@@ -1,10 +1,15 @@
 from django.contrib import admin
-from summit_app.models import Content, BoK
+from summit_app.models import Content, BoK, Argument
 
 
 class ContentInline(admin.TabularInline):
     model = Content
     fk_name = 'children'
+    extra = 1
+
+
+class ArgumentInline(admin.TabularInline):
+    model = Argument
     extra = 1
 
 
@@ -34,13 +39,13 @@ class BoKAdmin(admin.ModelAdmin):
         ('Headline', {'fields': ['headline']}),
         ('Parent Content', {'fields': ['parent_content']}),
         ('Type', {'fields': ['bok_type']}),
-        ('Arguments', {'fields': ['arguments']}),
-        ('Support', {'fields': ['support']}),
-        ('Citations', {'fields': ['citations']}),
         ('Date Information', {
             'fields': ['pub_date'],
             'classes': ['collapse']}),
     ]
+
+    inlines = [ArgumentInline]
+
 
 admin.site.register(Content, ContentAdmin)
 admin.site.register(BoK, BoKAdmin)
