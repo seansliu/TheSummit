@@ -13,12 +13,12 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django_mongodb_engine', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'hackathonfakedata',                      # Or path to database file if using sqlite3.
+        'NAME': 'hackathonFakeData',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'niels',
-        'PASSWORD': 'd8ebbb58d704d82fbf9787d6284a213f',
-        'HOST': 'mongodb://ds049337.mongolab.com/49337',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': 49337,                      # Set to empty string for default.
+        'USER': 'hackathonFakeData',
+        'PASSWORD': 'c3285c25af3b56b9a974f01cca3e6841',
+        'HOST': 'mongodb://oceanic.mongohq.com/hackathonFakeData',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': 10006,                      # Set to empty string for default.
     }
 }
 
@@ -36,7 +36,8 @@ TIME_ZONE = 'America/Chicago'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
 
-SITE_ID = '532e04ee6d081c05ad62f836'
+SITE_ID = '53409c6bf8cfc905992124b1'
+#SITE_ID = '532e04ee6d081c05ad62f836'
 
 #path name for the project root
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__name__))
@@ -132,7 +133,6 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'djangotoolbox',
-    'tastypie'
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
